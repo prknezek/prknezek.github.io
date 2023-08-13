@@ -13,39 +13,6 @@
     <link rel="icon" href="../../public/website-icon.png">
     <link rel="stylesheet" href="./src/pages/index.css">
     <title>Payton | Engineer</title>
-
-    <script>
-        const interests = [
-            'TECHNOLOGY &#128760',
-            'PUZZLES &#129504',
-            'FUN &#127881',
-            'GAMES &#127918',
-            'OUTDOORS &#127794',
-            'SOFTWARE &#128187',
-            'COUNTRY &#129312',
-            'SWEET &#127847',
-            'SPORTS &#127944',
-            'DOGS &#128054',
-            'MAGIC &#129497',
-            'TRAVEL &#128747'
-        ];
-
-        function updateInterest() {
-            var interest = document.getElementById("interest");
-            var idx = Math.floor(Math.random() * interests.length);
-            console.log(idx)
-
-            interest.innerHTML = interests[idx];
-        }
-
-        function revealName() {
-            var name = document.getElementById("name");
-
-            name.innerHTML = "Payton";
-            name.classList.add('name-after')
-            name.classList.remove('name-before')
-        }
-    </script>
 </head>
 <body>
     <div class="row">
@@ -58,13 +25,11 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- Title -->
-                    <!-- <span class="d-none fa fa-bold">Payton</span> -->
                     <div class="col-lg-8">
-                        <p class="header-title scale-up-center">I'm <span id="name" class="fa fa-bold name-before" onclick="revealName()">????</span>, a CS Student and lifelong learner.</p>
+                        <p class="header-title scale-up-center">I'm <span class="fa fa-bold">Payton</span>, a CS Student and lifelong learner.</p>
                     </div>
                     <!-- Interests -->
                     <div class="col-lg-4">
-                        <p class="header-desc"><i class="fa fa-arrow-right"></i> INTERESTED IN ALL THINGS <span id="interest">TECHNOLOGY &#128760</span></p>
                         <p class="header-desc"><i class="fa fa-arrow-right"></i> GYM ENTHUSIAST</p>
                     </div>
                     <!-- Resume Button -->
@@ -82,11 +47,31 @@
 
             <div class="pt-3"><hr></div>
 
-            
-            
-
         </div>
-        <div class="xol-xl-3 col-sm-2 col-1"></div>
+        <div class="col-xl-3 col-sm-2 col-1"></div>
+    </div>
+    <div class="scrolling-words-bkg">
+        <div class="scrolling-words-container">
+            <span class="text-white ml-auto">INTERESTED IN ALL THINGS</span>
+            <div class="scrolling-words-box mr-auto">
+                <ul>
+                    <li>TECHNOLOGY &#128760</li>
+                    <li>PUZZLES &#129504</li>
+                    <li>FUN &#127881</li>
+                    <li>GAMES &#127918</li>
+                    <li>OUTDOORS &#127794</li>
+                    <li>SOFTWARE &#128187</li>
+                    <li>COUNTRY &#129312</li>
+                    <li>SWEET &#127847</li>
+                    <li>SPORTS &#127944</li>
+                    <li>TRAVEL &#128747</li>
+                    <li>TECHNOLOGY &#128760</li>
+                </ul>
+            </div>
+        </div>
+        <!-- <h1 class="text-white">    
+            <i class="fa fa-arrow-right"></i> INTERESTED IN ALL THINGS <span id="interest">TECHNOLOGY &#128760</span>
+        </h1> -->
     </div>
 
     <script>
