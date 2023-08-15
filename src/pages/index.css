@@ -41,6 +41,42 @@ p, h1, h2, h3, h4, h5, h6 {
     --back_color : #b6e4ff  ;
 }
 
+.box {
+    border: none;
+    border-radius: 1px;
+    padding: 5px 20px;
+    background: #00ffb3;
+    position: relative;
+    overflow: hidden;
+}
+
+.box:hover:before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background-image: linear-gradient(
+        120deg,
+        rgba(255,255,255, 0) 30%,
+        rgba(255,255,255, .8),
+        rgba(255,255,255, 0) 70%
+    );
+    top: 0;
+    left: -100px;
+    animation: shine 2s linear; /* Animation */
+}
+
+@keyframes shine {
+    0% {left: -100px}
+    20% {left: 100%}
+    100% {left: 100%}
+}
+
+.card {
+    background-color: rgb(19, 30, 37);
+    border-radius: 12px;
+}
+
 @media screen and (max-width: 467px) {
     .scrolling-words-container div {
         text-align: center;
@@ -53,13 +89,9 @@ p, h1, h2, h3, h4, h5, h6 {
         height: 3rem;
         list-style: none;
     }
-
-    body {
-        margin-left: 15px;
-    }
 }
 
-.about-me-container {
+.layout-container {
     margin-top: 50vh;
 }
 
@@ -154,7 +186,7 @@ p, h1, h2, h3, h4, h5, h6 {
     font-size: 26px;
 }
 
-.header-desc:hover {
+.pop-animation:hover {
     animation-name: desc-animation;
     animation-duration: .2s;
     animation-timing-function: linear;
