@@ -83,6 +83,16 @@ p, h1, h2, h3, h4, h5, h6 {
     border-radius: 12px;
 }
 
+.card-title-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.job-desc li:not(:last-child) {
+    padding-bottom: 15px;
+}
+
 @media screen and (max-width: 467px) {
     .scrolling-words-container div {
         text-align: center;
