@@ -4,10 +4,37 @@ body {
     letter-spacing: 1.8px;
 }
 
+:root {
+    --line_color : #555555 ;
+    --back_color : #edb4ff  ;
+}
+
+.about-me-container {
+    margin-top: 50vh;
+}
+
+.headshot-container {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: 3px inset rgb(19, 30, 37);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+
+.headshot-container img {
+    margin-bottom: 85px;
+    margin-right: 25px;
+}
+
 .scrolling-words-bkg {
     background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
     position: absolute;
-    height: 50%;
+    top: 0;
+    height: 50vh;
     width: 100%;
 }
 
@@ -127,11 +154,6 @@ body {
    Resume button from https://freefrontend.com/css-buttons/ 
    By: あしざわ - Webクリエイター 
 */
-
-:root {
-    --line_color : #555555 ;
-    --back_color : #f5dae8  ;
-}
 
 .button{
     position : relative ;

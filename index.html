@@ -15,15 +15,47 @@
     <title>Payton | Engineer</title>
 </head>
 <body>
-    <div class="row">
+    <!-- Full Screen Scrolling Words -->
+
+    <div class="scrolling-words-bkg">
+        <div class="scrolling-words-container ">
+            <div class="row m-auto">
+                <span class="text-white m-md-0 m-auto">INTERESTED IN ALL THINGS</span>
+                <div class="scrolling-words-box m-md-0 m-auto">
+                    <ul>
+                        <li>TECHNOLOGY &#128760</li>
+                        <li>PUZZLES &#129504</li>
+                        <li>FUN &#127881</li>
+                        <li>GAMES &#127918</li>
+                        <li>OUTDOORS &#127794</li>
+                        <li>SOFTWARE &#128187</li>
+                        <li>COUNTRY &#129312</li>
+                        <li>SWEET &#127847</li>
+                        <li>SPORTS &#127944</li>
+                        <li>TRAVEL &#128747</li>
+                        <li>TECHNOLOGY &#128760</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Three Column Layout -->
+    <div class="row about-me-container">
         <div class="col-xl-3 col-sm-2 col-1"></div>
+
         <!-- Main column -->
         <div class="col-xl-6 col-sm-8 col-10">
-            <div class="pt-5"><hr></div>
+            <div class="pt-1"><hr></div>
+
+            <!-- Headshot -->
+            <div class="headshot-container mx-auto mt-5">
+                <img src="./public/cartoon-me-small.jpg" alt="picture of me" width="350" height="350">
+            </div>
 
             <!-- Header -->
             <div class="container-fluid">
-                <div class="row">
+                <div class="row mt-5">
                     <!-- Title -->
                     <div class="col-lg-8">
                         <p class="header-title scale-up-center">I'm <span class="fa fa-bold">Payton</span>, a CS Student and lifelong learner.</p>
@@ -31,6 +63,8 @@
                     <!-- Interests -->
                     <div class="col-lg-4">
                         <p class="header-desc"><i class="fa fa-arrow-right"></i> GYM ENTHUSIAST</p>
+                        <p class="header-desc"><i class="fa fa-arrow-right"></i> PERFECTIONIST</p>
+                        <p class="header-desc"><i class="fa fa-arrow-right"></i> ECLECTIC MUSIC ENJOYER</p>
                     </div>
                     <!-- Resume Button -->
                     <div class="contain pt-3">
@@ -45,37 +79,11 @@
                 </div>
             </div>
 
-            <div class="pt-3"><hr></div>
+            <div class="pt-1"><hr></div>
 
         </div>
+
         <div class="col-xl-3 col-sm-2 col-1"></div>
     </div>
-    <div class="scrolling-words-bkg">
-        <div class="scrolling-words-container">
-            <span class="text-white ml-auto">INTERESTED IN ALL THINGS</span>
-            <div class="scrolling-words-box mr-auto">
-                <ul>
-                    <li>TECHNOLOGY &#128760</li>
-                    <li>PUZZLES &#129504</li>
-                    <li>FUN &#127881</li>
-                    <li>GAMES &#127918</li>
-                    <li>OUTDOORS &#127794</li>
-                    <li>SOFTWARE &#128187</li>
-                    <li>COUNTRY &#129312</li>
-                    <li>SWEET &#127847</li>
-                    <li>SPORTS &#127944</li>
-                    <li>TRAVEL &#128747</li>
-                    <li>TECHNOLOGY &#128760</li>
-                </ul>
-            </div>
-        </div>
-        <!-- <h1 class="text-white">    
-            <i class="fa fa-arrow-right"></i> INTERESTED IN ALL THINGS <span id="interest">TECHNOLOGY &#128760</span>
-        </h1> -->
-    </div>
-
-    <script>
-        var update = setInterval(updateInterest, 3000);
-    </script>
 </body>
 </html>
