@@ -6,11 +6,11 @@
     margin: 0;
 }
 
-* {
+/* * {
     background: #000 !important;
     color: #0f0 !important;
     outline: solid #f00 1px !important;
-}
+} */
 
 body {
     line-height: 1.5;
@@ -56,7 +56,7 @@ p, h1, h2, h3, h4, h5, h6 {
     overflow: hidden;
 }
 
-.box:hover:before {
+.box:before {
     content: '';
     position: absolute;
     width: 100px;
@@ -69,12 +69,12 @@ p, h1, h2, h3, h4, h5, h6 {
     );
     top: 0;
     left: -100px;
-    animation: shine 2s linear; /* Animation */
+    animation: shine 8s infinite linear; /* Animation */
 }
 
 @keyframes shine {
     0% {left: -100px}
-    20% {left: 100%}
+    10% {left: 100%}
     100% {left: 100%}
 }
 
@@ -150,7 +150,7 @@ p, h1, h2, h3, h4, h5, h6 {
 .scrolling-words-box ul li {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     height: 3rem;
     list-style: none;
 }
