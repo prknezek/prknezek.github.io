@@ -108,7 +108,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 .layout-container {
-    margin-top: 50vh;
+    margin-top: 30vh;
 }
 
 .headshot-container {
@@ -132,7 +132,7 @@ p, h1, h2, h3, h4, h5, h6 {
     background: radial-gradient(circle at -8.9% 51.2%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15.9%, rgb(255, 163, 77) 15.9%, rgb(255, 163, 77) 24.4%, rgb(19, 30, 37) 24.5%, rgb(19, 30, 37) 66%);
     position: absolute;
     top: 0;
-    height: 50vh;
+    height: 30vh;
     width: 100%;
 }
 
