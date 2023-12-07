@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Location Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Menu Location JavaScript Code Documentation</h1>
+
+    <!-- Map Data -->
+    <section id="map-data">
+        <h2>Map Data</h2>
+        <p>
+            Represents a map of store locations and their corresponding Google Maps embed links.
+        </p>
+        <pre><code>
+const myMap = new Map([
+    ["cstat", "https://www.google.com/maps/embed?..."],
+    ["dallas", "https://www.google.com/maps/embed?..."],
+    ["houston", "https://www.google.com/maps/embed?..."],
+]);
+        </code></pre>
+    </section>
+
+    <!-- Function: default_item_active -->
+    <section id="default-item-active">
+        <h2>Function: default_item_active</h2>
+        <p>
+            Resets the active state for menu buttons and displays the default item.
+        </p>
+        <pre><code>
+function default_item_active() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: checkItemsDisplay -->
+    <section id="check-items-display">
+        <h2>Function: checkItemsDisplay</h2>
+        <p>
+            Checks whether all menu items are hidden and adjusts the display of the default item accordingly.
+        </p>
+        <pre><code>
+function checkItemsDisplay() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: category_active -->
+    <section id="category-active">
+        <h2>Function: category_active</h2>
+        <p>
+            Handles the activation of a menu category button, displaying its associated items and updating the selection.
+        </p>
+        <pre><code>
+function category_active() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: refresh_selection -->
+    <section id="refresh-selection">
+        <h2>Function: refresh_selection</h2>
+        <p>
+            Refreshes the selection by deactivating other active menu buttons and hiding their associated items.
+        </p>
+        <pre><code>
+function refresh_selection(btn_name) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: getJSON -->
+    <section id="get-json">
+        <h2>Function: getJSON</h2>
+        <p>
+            Generates JSON data based on the type and store parameters.
+        </p>
+        <pre><code>
+function getJSON(type, store) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: changeStore -->
+    <section id="change-store">
+        <h2>Function: changeStore</h2>
+        <p>
+            Changes the store and updates the map display and user information.
+        </p>
+        <pre><code>
+function changeStore(store) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Event: window.onload -->
+    <section id="window-onload">
+        <h2>Event: window.onload</h2>
+        <p>
+            Handles actions on the window.onload event, setting the initial map display.
+        </p>
+        <pre><code>
+window.onload = function() {
+    // ... Event code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Function: updateInfo -->
+    <section id="update-info">
+        <h2>Function: updateInfo</h2>
+        <p>
+            Updates information on the server based on the specified type and store.
+        </p>
+        <pre><code>
+function updateInfo(type, store) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+</body>
+</html>

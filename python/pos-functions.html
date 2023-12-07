@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>POS Functions Documentation</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="./pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="./pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="./pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="./users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../javascript/account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="../javascript/alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="../javascript/cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="../javascript/create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="../javascript/edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="../javascript/html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="../javascript/ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="../javascript/kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="../javascript/landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="../javascript/local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="../javascript/menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="../javascript/order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="../javascript/order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="../javascript/sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="../javascript/update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<h1>Django Project Functions Documentation</h1>
+
+<p>
+    This document provides documentation for various functions used in the Django project. Each section outlines the
+    purpose and functionality of a specific function.
+</p>
+
+<h2>1. getItems</h2>
+
+<p>
+    Retrieves all items from the Items model.
+</p>
+
+<pre>
+<code>
+    def getItems():
+        """
+        Retrieves all items from the Items model.
+
+        Returns:
+        - QuerySet: A queryset containing all items in the Items model.
+        """
+</code>
+</pre>
+
+<h2>2. getIngredients</h2>
+
+<p>
+    Retrieves all ingredients from the Ingredients model.
+</p>
+
+<pre>
+<code>
+    def getIngredients():
+        """
+        Retrieves all ingredients from the Ingredients model.
+
+        Returns:
+        - QuerySet: A queryset containing all ingredients in the Ingredients model.
+        """
+</code>
+</pre>
+
+<h2>3. getIngredientItems</h2>
+
+<p>
+    Retrieves all ingredient items associated with a specific item.
+</p>
+
+<pre>
+<code>
+    def getIngredientItems(item_id):
+        """
+        Retrieves all ingredient items associated with a specific item.
+
+        Parameters:
+        - item_id (int): The ID of the item for which to retrieve associated ingredient items.
+
+        Returns:
+        - QuerySet: A queryset containing all ingredient items associated with the specified item.
+        """
+</code>
+</pre>
+
+<h2>4. getUserOrders</h2>
+
+<p>
+    Retrieves recent orders of a user with details about the items included in each order.
+</p>
+
+<pre>
+<code>
+    def getUserOrders(user_id):
+        """
+        Retrieves recent orders of a user with details about the items included in each order.
+
+        Parameters:
+        - user_id (int): The ID of the user for whom to retrieve recent orders.
+
+        Returns:
+        - dict: A dictionary where keys are order IDs, and values are dictionaries containing order details.
+          Each order detail includes information about the order and a list of items included in the order.
+        """
+</code>
+</pre>
+
+<h2>5. getMobileOrders</h2>
+
+<p>
+    Retrieves a specified number of undelivered orders along with details about the items included in each order.
+</p>
+
+<pre>
+<code>
+    def getMobileOrders():
+        """
+        Retrieves a specified number of undelivered orders along with details about the items included in each order.
+
+        Returns:
+        - dict: A dictionary where keys are order IDs, and values are dictionaries containing order details.
+          Each order detail includes information about the order and a list of items included in the order.
+        """
+</code>
+</pre>
+
+<h2>6. getOrders</h2>
+
+<p>
+    Retrieves order details within a specified range, including information about the items in each order.
+</p>
+
+<pre>
+<code>
+    def getOrders(start=models.Orders.get_next_highest_id()):
+        """
+        Retrieves order details within a specified range, including information about the items in each order.
+
+        Parameters:
+        - start (int): The starting order ID for the range. Defaults to the next highest order ID.
+
+        Returns:
+        - dict: A dictionary where keys are order IDs, and values are dictionaries containing order details.
+          Each order detail includes information about the order and a list of common names of items included in the order.
+        """
+</code>
+</pre>
+
+<!-- Previous documentation -->
+
+<!-- ... -->
+
+<h2>7. getOrder</h2>
+
+<p>
+    Retrieves a specific order by its ID.
+</p>
+
+<pre>
+<code>
+    def getOrder(id_num):
+        """
+        Retrieves a specific order by its ID.
+
+        Parameters:
+        - id_num (int): The ID of the order to retrieve.
+
+        Returns:
+        - models.Orders or None: The order object if found, or None if the order with the given ID does not exist.
+        """
+</code>
+</pre>
+
+<h2>8. getItem</h2>
+
+<p>
+    Retrieves a specific item by its ID.
+</p>
+
+<pre>
+<code>
+    def getItem(id_num):
+        """
+        Retrieves a specific item by its ID.
+
+        Parameters:
+        - id_num (int): The ID of the item to retrieve.
+
+        Returns:
+        - models.Items or None: The item object if found, or None if the item with the given ID does not exist.
+        """
+</code>
+</pre>
+
+<h2>9. getOrderItems</h2>
+
+<p>
+    Retrieves order items for a list of orders.
+</p>
+
+<pre>
+<code>
+    def getOrderItems(orders):
+        """
+        Retrieves order items for a list of orders.
+
+        Parameters:
+        - orders (list): List of order objects.
+
+        Returns:
+        - dict: A dictionary containing a list of order items for each order in the input list.
+          The structure is {'orders': [order_items_list1, order_items_list2, ...]}.
+        """
+</code>
+</pre>
+
+<h2>10. salesGraph</h2>
+
+<p>
+    Generates a sales graph for a given item based on its item_id.
+</p>
+
+<pre>
+<code>
+    def salesGraph(item_id=0):
+        """
+        Generates a sales graph for a given item based on its item_id.
+
+        Parameters:
+        - item_id (int, optional): The ID of the item for which sales data should be plotted. Default is 0.
+
+        Returns:
+        - plotly.graph_objects.Figure: A Plotly Figure object representing the sales graph.
+        """
+</code>
+</pre>
+
+<!-- Previous documentation -->
+
+<!-- ... -->
+
+<h2>11. stockGraph</h2>
+
+<p>
+    Generates a stock graph for a given ingredient based on its ingredient_id.
+</p>
+
+<pre>
+<code>
+    def stockGraph(ingredient_id=0):
+        """
+        Generates a stock graph for a given ingredient based on its ingredient_id.
+
+        Parameters:
+        - ingredient_id (int, optional): The ID of the ingredient for which stock data should be plotted. Default is 0.
+
+        Returns:
+        - plotly.graph_objects.Figure: A Plotly Figure object representing the stock graph.
+        """
+</code>
+</pre>
+
+<h2>12. get_restock_alerts</h2>
+
+<p>
+    Retrieves a queryset of ingredients that have stock levels below or equal to 20.
+</p>
+
+<pre>
+<code>
+    def get_restock_alerts():
+        """
+        Retrieves a queryset of ingredients that have stock levels below or equal to 20.
+
+        Returns:
+        - QuerySet: A Django QuerySet containing ingredient details (id, common_name, stock) for ingredients that require restocking.
+        """
+</code>
+</pre>
+
+<h2>13. get_excess_alerts</h2>
+
+<p>
+    Retrieves a list of ingredients that have a low sales percentage compared to their total inventory within a specified time range.
+</p>
+
+<pre>
+<code>
+    def get_excess_alerts(time, endTime):
+        """
+        Retrieves a list of ingredients that have a low sales percentage compared to their total inventory
+        within a specified time range.
+
+        Args:
+        - time (datetime): Start of the time range.
+        - endTime (datetime): End of the time range.
+
+        Returns:
+        - List: A list of dictionaries containing ingredient details (id, common_name, amount_sold, total_inventory) for ingredients with low sales percentages.
+        """
+</code>
+</pre>
+
+<h2>14. get_top_common_items</h2>
+
+<p>
+    Retrieves a list of the top common item pairs based on their co-occurrence in orders.
+</p>
+
+<pre>
+<code>
+    def get_top_common_items():
+        """
+        Retrieves a list of the top common item pairs based on their co-occurrence in orders.
+
+        Returns:
+        - List: A list of strings representing common item pairs and their occurrence counts, ordered by occurrence in descending order.
+        """
+</code>
+</pre>
+
+<!-- Continue documenting other functions similarly -->
+
+</body>
+</html>
+
+

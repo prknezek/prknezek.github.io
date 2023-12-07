@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage Interaction Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Local Storage JavaScript Code Documentation</h1>
+
+    <!-- Function: formatNumberTo_N_Digits -->
+    <section id="format-number-to-n-digits">
+        <h2>Function: formatNumberTo_N_Digits</h2>
+        <p>
+            Formats a number to a specified number of digits, padding with '0' if necessary.
+        </p>
+        <pre><code>
+/**
+ * Formats a number to a specified number of digits, padding with '0' if necessary.
+ * @param {number} number - The number to be formatted.
+ * @param {number} N - The desired number of digits.
+ * @returns {string} - The formatted number.
+ */
+function formatNumberTo_N_Digits(number, N) {
+    return number.toString().padStart(N, "0");
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: LS_cart_count -->
+    <section id="ls-cart-count">
+        <h2>Function: LS_cart_count</h2>
+        <p>
+            Retrieves the total count of cart_items in local storage.
+        </p>
+        <pre><code>
+/**
+ * Retrieves the total count of cart_items in local storage.
+ * @returns {number} - The total count of cart_items.
+ */
+function LS_cart_count() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: LS_cart_map -->
+    <section id="ls-cart-map">
+        <h2>Function: LS_cart_map</h2>
+        <p>
+            Processes all cart_item entries from local storage and returns a Map object sorted by key.
+        </p>
+        <pre><code>
+/**
+ * Processes all cart_item entries from local storage and returns a Map object sorted by key.
+ * @returns {Map} - The sorted cart_item entries.
+ */
+function LS_cart_map() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: LS_clear_items -->
+    <section id="ls-clear-items">
+        <h2>Function: LS_clear_items</h2>
+        <p>
+            Removes all keys with "cart_item" from local storage, excluding necessary entries.
+        </p>
+        <pre><code>
+/**
+ * Removes all keys with "cart_item" from local storage, excluding necessary entries.
+ */
+function LS_clear_items() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: update_cart_map -->
+    <section id="update-cart-map">
+        <h2>Function: update_cart_map</h2>
+        <p>
+            Resets local storage entries starting with "cart_item" and adds new entries given new_cart_map type: Map().
+        </p>
+        <pre><code>
+/**
+ * Resets local storage entries starting with "cart_item" and
+ * adds new entries given new_cart_map type: Map().
+ * @param {Map} new_cart_map - The new cart_map to be stored in local storage.
+ */
+function update_cart_map(new_cart_map = new Map()) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: checkIfItemExistsInCart -->
+    <section id="check-if-item-exists-in-cart">
+        <h2>Function: checkIfItemExistsInCart</h2>
+        <p>
+            Given item_id, returns key or null if not found in current local storage map.
+        </p>
+        <pre><code>
+/**
+ * Given item_id, returns key or null if not found in current local storage map.
+ * @param {string} item_id - The item_id to search for.
+ * @returns {string|null} - The key associated with the item_id or null if not found.
+ */
+function checkIfItemExistsInCart(item_id) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: calc_total_cart_price -->
+    <section id="calc-total-cart-price">
+        <h2>Function: calc_total_cart_price</h2>
+        <p>
+            Calculates the total price of items in the cart_map.
+        </p>
+        <pre><code>
+/**
+ * Calculates the total price of items in the cart_map.
+ * @returns {number} - The total price of items in the cart_map.
+ */
+function calc_total_cart_price() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: LS_add_item -->
+    <section id="ls-add-item">
+        <h2>Function: LS_add_item</h2>
+        <p>
+            Adds a new item to the cart in local storage or increments quantity if the item already exists.
+        </p>
+        <pre><code>
+/**
+ * Adds a new item to the cart in local storage or increments quantity if the item already exists.
+ * @param {number} id - The item ID.
+ * @param {number} price - The item price.
+ * @param {string} description - The item description.
+ * @param {string} common_name - The common name of the item.
+ */
+function LS_add_item(id, price, description, common_name) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: LS_remove_item -->
+    <section id="ls-remove-item">
+        <h2>Function: LS_remove_item</h2>
+        <p>
+            Decrements or removes an item from the cart in local storage based on quantity.
+        </p>
+        <pre><code>
+/**
+ * Decrements or removes an item from the cart in local storage based on quantity.
+ * @param {number} id - The item ID.
+ * @param {number} price - The item price.
+ * @param {string} common_name - The common name of the item.
+ */
+function LS_remove_item(id, price, common_name) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: cart_appendOrderItem -->
+    <section id="cart-append-order-item">
+        <h2>Function: cart_appendOrderItem</h2>
+        <p>
+            Creates and appends an order item to the order-container in the DOM.
+        </p>
+        <pre><code>
+/**
+ * Creates and appends an order item to the order-container in the DOM.
+ * @param {string} item_quantity - The quantity of the item.
+ * @param {string} item_price - The price of the item.
+ * @param {string} descr - The description of the item.
+ * @param {string} common_name - The common name of the item.
+ * @param {string} item_id - The ID of the item.
+ */
+function cart_appendOrderItem(item_quantity, item_price, descr, common_name, item_id) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: populateCartItems -->
+    <section id="populate-cart-items">
+        <h2>Function: populateCartItems</h2>
+        <p>
+            Loads the DOM with cart_items from local storage based on the sorted map from LS_cart_map().
+        </p>
+        <pre><code>
+/**
+ * Loads the DOM with cart_items from local storage based on the sorted map from LS_cart_map().
+ */
+function populateCartItems() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: LS_pay -->
+    <section id="ls-pay">
+        <h2>Function: LS_pay</h2>
+        <p>
+            Processes items in the cart_map, sends order details to the server, clears items, and updates the DOM.
+        </p>
+        <pre><code>
+/**
+ * Processes items in the cart_map, sends order details to the server, clears items, and updates the DOM.
+ */
+function LS_pay() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: remove_all_orderItems -->
+    <section id="remove-all-order-items">
+        <h2>Function: remove_all_orderItems</h2>
+        <p>
+            Removes all orderItems from the DOM.
+        </p>
+        <pre><code>
+/**
+ * Removes all orderItems from the DOM.
+ */
+function remove_all_orderItems() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: clear_cartButton -->
+    <section id="clear-cart-button">
+        <h2>Function: clear_cartButton</h2>
+        <p>
+            Clears all cart_items from local storage and updates the DOM.
+        </p>
+        <pre><code>
+/**
+ * Clears all cart_items from local storage and updates the DOM.
+ */
+function clear_cartButton() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: check_emptyCart -->
+    <section id="check-empty-cart">
+        <h2>Function: check_emptyCart</h2>
+        <p>
+            Checks if the cart is empty and prevents checkout if true.
+        </p>
+        <pre><code>
+/**
+ * Checks if the cart is empty and prevents checkout if true.
+ * @param {Event} event - The event triggering the check.
+ */
+function check_emptyCart(event) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: check_emptyCart_checkout -->
+    <section id="check-empty-cart-checkout">
+        <h2>Function: check_emptyCart_checkout</h2>
+        <p>
+            Checks if the cart is empty and prevents checkout if true.
+        </p>
+        <pre><code>
+/**
+ * Checks if the cart is empty and prevents checkout if true.
+ * @param {Event} event - The event triggering the check.
+ */
+function check_emptyCart_checkout(event) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: orderCart -->
+    <section id="order-cart">
+        <h2>Function: orderCart</h2>
+        <p>
+            Checks if the cart is empty and redirects to the order_online page.
+        </p>
+        <pre><code>
+/**
+ * Checks if the cart is empty and redirects to the order_online page.
+ * @param {Event} event - The event triggering the check.
+ */
+function orderCart(event) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: showAlert -->
+    <section id="show-alert">
+        <h2>Function: showAlert</h2>
+        <p>
+            Shows a favorite order alert.
+        </p>
+        <pre><code>
+/**
+ * Shows a favorite order alert.
+ */
+function showAlert() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: closeAlert -->
+    <section id="close-alert">
+        <h2>Function: closeAlert</h2>
+        <p>
+            Closes the favorite order alert.
+        </p>
+        <pre><code>
+/**
+ * Closes the favorite order alert.
+ */
+function closeAlert() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: selectFavorite -->
+    <section id="select-favorite">
+        <h2>Function: selectFavorite</h2>
+        <p>
+            Updates the favorite status in the DB and toggles button behavior.
+        </p>
+        <pre><code>
+/**
+ * Updates the favorite status in the DB and toggles button behavior.
+ * @param {string} order_id - The ID of the order.
+ * @param {string} is_favorited - The current favorite status.
+ */
+function selectFavorite(order_id, is_favorited) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: orderAndFavCart -->
+    <section id="order-and-fav-cart">
+        <h2>Function: orderAndFavCart</h2>
+        <p>
+            Orders the cart, updates favorite, and redirects to order_online page.
+        </p>
+        <pre><code>
+/**

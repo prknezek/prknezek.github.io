@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Details Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Account Details JavaScript Code Documentation</h1>
+
+    <!-- Global Variables -->
+    <section id="global-variables">
+        <h2>Global Variables</h2>
+        <pre><code>
+var id = 1;                  // Represents the ID of order items
+var options_id = 0;           // Used for something related to options
+var item_map = new Map();     // Map to store order items
+var total = 0;                // Represents the total price of the order
+        </code></pre>
+    </section>
+
+    <!-- Function: createOrderItem -->
+    <section id="create-order-item">
+        <h2>Function: createOrderItem</h2>
+        <p>
+            Creates an order item based on a template and manages related functionalities.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>item</code> (<code>HTMLElement</code>): The item to be added to the order.</li>
+            </ul>
+        </p>
+        <pre><code>
+function createOrderItem(item) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: changeCategory -->
+    <section id="change-category">
+        <h2>Function: changeCategory</h2>
+        <p>
+            Filters and shows/hides items based on the selected category.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>category</code> (<code>string</code>): The category to be displayed.</li>
+            </ul>
+        </p>
+        <pre><code>
+function changeCategory(category) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Add more sections for other functions as needed -->
+
+    <!-- New JavaScript Code Sections -->
+
+    <!-- Section: Web Application Initialization -->
+    <section>
+        <h2>Web Application Initialization</h2>
+        <p>
+            Represents a web application with functionality related to user preferences and store information.
+        </p>
+        <pre><code>
+// ... New code ...
+        </code></pre>
+    </section>
+
+    <!-- Section: Initialize Map for Store Locations -->
+    <section>
+        <h2>Initialize Map for Store Locations</h2>
+        <p>
+            Create a Map to store locations and their corresponding Google Maps URLs.
+        </p>
+        <pre><code>
+// ... New code ...
+        </code></pre>
+    </section>
+
+    <!-- Section: Initialize Web Page with Correct Store -->
+    <section>
+        <h2>Initialize Web Page with Correct Store</h2>
+        <p>
+            Initializes the web page with the correct store in an interactive map.
+        </p>
+        <pre><code>
+// ... New code ...
+        </code></pre>
+    </section>
+
+    <!-- Section: Add Items to Shopping Cart -->
+    <section>
+        <h2>Add Items to Shopping Cart</h2>
+        <p>
+            Adds items to the shopping cart based on the provided order_id.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>order_id</code> (<code>string</code>): The ID of the order.</li>
+            </ul>
+        </p>
+        <pre><code>
+function cart_add_items(order_id) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Section: Update Displayed Date -->
+    <section>
+        <h2>Update Displayed Date</h2>
+        <p>
+            Updates the displayed date when the user selects a date in the birthday picker.
+        </p>
+        <pre><code>
+// ... New code ...
+        </code></pre>
+    </section>
+
+    <!-- Section: Change Store -->
+    <section>
+        <h2>Change Store</h2>
+        <p>
+            Changes the displayed store information and updates user preferences based on the selected store.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>store</code> (<code>string</code>): The selected store ('cstat', 'dallas', or 'houston').</li>
+            </ul>
+        </p>
+        <pre><code>
+function changeStore(store) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Add more sections for other functions as needed -->
+
+</body>
+</html>

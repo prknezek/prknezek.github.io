@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kitchen Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Kitchen JavaScript Code Documentation</h1>
+
+    <!-- Function: timed_refresh -->
+    <section id="timed-refresh">
+        <h2>Function: timed_refresh</h2>
+        <p>
+            Refreshes the page at regular intervals and updates order colors. Initial call to update order colors is made before setting the timeout for page reload.
+        </p>
+        <pre><code>
+/**
+ * Refreshes the page at regular intervals and updates order colors.
+ * Initial call to update order colors is made before setting the timeout for page reload.
+ */
+function timed_refresh() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: deliver_order -->
+    <section id="deliver-order">
+        <h2>Function: deliver_order</h2>
+        <p>
+            Delivers an order by sending a request to the server and removing the order element from the screen.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>element</code> (<code>HTMLElement</code>): The HTML element representing the order to be delivered.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Delivers an order by sending a request to the server and removing the order element from the screen.
+ * @param {HTMLElement} element - The HTML element representing the order to be delivered.
+ */
+function deliver_order(element) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: updateOrderColors -->
+    <section id="update-order-colors">
+        <h2>Function: updateOrderColors</h2>
+        <p>
+            Updates the background color of order items based on the time elapsed since order placement. Color thresholds and corresponding time classes are defined.
+        </p>
+        <pre><code>
+/**
+ * Updates the background color of order items based on the time elapsed since order placement.
+ * Color thresholds and corresponding time classes are defined.
+ */
+function updateOrderColors() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: parseFormattedDate -->
+    <section id="parse-formatted-date">
+        <h2>Function: parseFormattedDate</h2>
+        <p>
+            Parses a formatted date string and returns a JavaScript Date object.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>dateString</code> (<code>string</code>): The formatted date string to parse.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Parses a formatted date string and returns a JavaScript Date object.
+ * @param {string} dateString - The formatted date string to parse.
+ * @returns {Date} - The parsed Date object.
+ */
+function parseFormattedDate(dateString) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: getCookie -->
+    <section id="get-cookie">
+        <h2>Function: getCookie</h2>
+        <p>
+            Gets the value of a specific cookie by its name.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>name</code> (<code>string</code>): The name of the cookie to retrieve.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Gets the value of a specific cookie by its name.
+ * @param {string} name - The name of the cookie to retrieve.
+ * @returns {string|null} - The value of the cookie, or null if the cookie is not found.
+ */
+function getCookie(name) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Script: Attach timed_refresh to window.onload -->
+    <section id="attach-timed-refresh">
+        <h2>Script: Attach timed_refresh to window.onload</h2>
+        <p>
+            Attach the function to the <code>window.onload</code> event.
+        </p>
+        <pre><code>
+//

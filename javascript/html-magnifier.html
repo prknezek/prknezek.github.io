@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Magnifier Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>HTML Magnifier JavaScript Code Documentation</h1>
+
+    <!-- Class: HTMLMagnifier -->
+    <section id="html-magnifier">
+        <h2>Class: HTMLMagnifier</h2>
+        <p>
+            HTMLMagnifier is a JavaScript class for creating a magnifier element on a webpage.
+        </p>
+        <p>
+            <strong>Constructor:</strong>
+            <ul>
+                <li><code>options</code> (<code>Object</code>): Options for configuring the magnifier, including zoom level, shape, width, and height.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * HTMLMagnifier is a JavaScript class for creating a magnifier element on a webpage.
+ * @param {Object} options - Options for configuring the magnifier, including zoom level, shape, width, and height.
+ * @constructor
+ */
+        </code></pre>
+    </section>
+
+    <!-- Method: setZoom -->
+    <section id="set-zoom">
+        <h2>Method: setZoom</h2>
+        <p>
+            Sets the zoom level of the magnifier.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>value</code> (<code>number</code>): The zoom level.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Sets the zoom level of the magnifier.
+ * @param {number} value - The zoom level.
+ */
+HTMLMagnifier.prototype.setZoom = function(value) {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: setShape -->
+    <section id="set-shape">
+        <h2>Method: setShape</h2>
+        <p>
+            Sets the shape, width, and height of the magnifier.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>shape</code> (<code>string</code>): The shape of the magnifier ('square' or 'circle').</li>
+                <li><code>width</code> (<code>number</code>): The width of the magnifier.</li>
+                <li><code>height</code> (<code>number</code>): The height of the magnifier.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Sets the shape, width, and height of the magnifier.
+ * @param {string} shape - The shape of the magnifier ('square' or 'circle').
+ * @param {number} width - The width of the magnifier.
+ * @param {number} height - The height of the magnifier.
+ */
+HTMLMagnifier.prototype.setShape = function(shape, width, height) {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: setWidth -->
+    <section id="set-width">
+        <h2>Method: setWidth</h2>
+        <p>
+            Sets the width of the magnifier.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>value</code> (<code>number</code>): The width of the magnifier.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Sets the width of the magnifier.
+ * @param {number} value - The width of the magnifier.
+ */
+HTMLMagnifier.prototype.setWidth = function(value) {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: setHeight -->
+    <section id="set-height">
+        <h2>Method: setHeight</h2>
+        <p>
+            Sets the height of the magnifier.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>value</code> (<code>number</code>): The height of the magnifier.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Sets the height of the magnifier.
+ * @param {number} value - The height of the magnifier.
+ */
+HTMLMagnifier.prototype.setHeight = function(value) {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: getZoom -->
+    <section id="get-zoom">
+        <h2>Method: getZoom</h2>
+        <p>
+            Gets the current zoom level of the magnifier.
+        </p>
+        <pre><code>
+/**
+ * Gets the current zoom level of the magnifier.
+ * @returns {number} - The zoom level.
+ */
+HTMLMagnifier.prototype.getZoom = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: getShape -->
+    <section id="get-shape">
+        <h2>Method: getShape</h2>
+        <p>
+            Gets the current shape of the magnifier.
+        </p>
+        <pre><code>
+/**
+ * Gets the current shape of the magnifier.
+ * @returns {string} - The shape ('square' or 'circle').
+ */
+HTMLMagnifier.prototype.getShape = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: getWidth -->
+    <section id="get-width">
+        <h2>Method: getWidth</h2>
+        <p>
+            Gets the current width of the magnifier.
+        </p>
+        <pre><code>
+/**
+ * Gets the current width of the magnifier.
+ * @returns {number} - The width of the magnifier.
+ */
+HTMLMagnifier.prototype.getWidth = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: getHeight -->
+    <section id="get-height">
+        <h2>Method: getHeight</h2>
+        <p>
+            Gets the current height of the magnifier.
+        </p>
+        <pre><code>
+/**
+ * Gets the current height of the magnifier.
+ * @returns {number} - The height of the magnifier.
+ */
+HTMLMagnifier.prototype.getHeight = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: isVisible -->
+    <section id="is-visible">
+        <h2>Method: isVisible</h2>
+        <p>
+            Checks if the magnifier is currently visible.
+        </p>
+        <pre><code>
+/**
+ * Checks if the magnifier is currently visible.
+ * @returns {boolean} - True if the magnifier is visible; otherwise, false.
+ */
+HTMLMagnifier.prototype.isVisible = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: on -->
+    <section id="on">
+        <h2>Method: on</h2>
+        <p>
+            Registers an event handler for a specific event.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>event</code> (<code>string</code>): The event name.</li>
+                <li><code>callback</code> (<code>Function</code>): The event handler function.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Registers an event handler for a specific event.
+ * @param {string} event - The event name.
+ * @param {Function} callback - The event handler function.
+ */
+HTMLMagnifier.prototype.on = function(event, callback) {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: syncScrollBars -->
+    <section id="sync-scroll-bars">
+        <h2>Method: syncScrollBars</h2>
+        <p>
+            Synchronizes the scroll bars of the magnifier.
+        </p>
+        <pre><code>
+/**
+ * Synchronizes the scroll bars of the magnifier.
+ */
+HTMLMagnifier.prototype.syncScrollBars = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: syncContent -->
+    <section id="sync-content">
+        <h2>Method: syncContent</h2>
+        <p>
+            Synchronizes the content of the magnifier.
+        </p>
+        <pre><code>
+/**
+ * Synchronizes the content of the magnifier.
+ */
+HTMLMagnifier.prototype.syncContent = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: hide -->
+    <section id="hide">
+        <h2>Method: hide</h2>
+        <p>
+            Hides the magnifier.
+        </p>
+        <pre><code>
+/**
+ * Hides the magnifier.
+ */
+HTMLMagnifier.prototype.hide = function() {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+    <!-- Method: show -->
+    <section id="show">
+        <h2>Method: show</h2>
+        <p>
+            Displays the magnifier at a specified position.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <ul>
+                <li><code>event</code> (<code>MouseEvent</code>): The mouse event triggering the display (optional).</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * Displays the magnifier at a specified position.
+ * @param {MouseEvent} event - The mouse event triggering the display (optional).
+ */
+HTMLMagnifier.prototype.show = function(event) {
+    // ... Method code ...
+};
+        </code></pre>
+    </section>
+
+</body>
+</html>

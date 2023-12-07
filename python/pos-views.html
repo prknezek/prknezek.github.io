@@ -1,0 +1,808 @@
+<!-- Previous documentation -->
+
+<!-- ... -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="./Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="./pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="./pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="./pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="./users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="../javascript/account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="../javascript/alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="../javascript/cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="../javascript/create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="../javascript/edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="../javascript/html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="../javascript/ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="../javascript/kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="../javascript/landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="../javascript/local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="../javascript/menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="../javascript/order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="../javascript/order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="../javascript/sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="../javascript/update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+<h2>1. base</h2>
+
+<p>
+    View function for rendering the 'base.html' template.
+</p>
+
+<pre>
+<code>
+    def base(request):
+        """
+        View function for rendering the 'base.html' template.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'base.html' template.
+        """
+</code>
+</pre>
+
+<h2>2. index</h2>
+
+<p>
+    View function for rendering the 'index.html' template.
+</p>
+
+<pre>
+<code>
+    def index(request):
+        """
+        View function for rendering the 'index.html' template.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'index.html' template.
+        """
+</code>
+</pre>
+
+<h2>3. cashier</h2>
+
+<p>
+    View function for rendering the 'cashier.html' template.
+</p>
+
+<pre>
+<code>
+    def cashier(request):
+        """
+        View function for rendering the 'cashier.html' template.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'cashier.html' template.
+        """
+</code>
+</pre>
+
+<h2>4. customer_landing</h2>
+
+<p>
+    View function for rendering the 'landing.html' template for customers.
+</p>
+
+<pre>
+<code>
+    def customer_landing(request):
+        """
+        View function for rendering the 'landing.html' template for customers.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'landing.html' template.
+        """
+</code>
+</pre>
+
+<h2>5. staff_home</h2>
+
+<p>
+    View function for rendering the 'staff_landing.html' template for staff members.
+</p>
+
+<pre>
+<code>
+    def staff_home(request):
+        """
+        View function for rendering the 'staff_landing.html' template for staff members.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'staff_landing.html' template.
+        """
+</code>
+</pre>
+
+<h2>6. menu_loc</h2>
+
+<p>
+    View function for rendering the 'menu_loc.html' template, displaying menu items for a specific location.
+</p>
+
+<pre>
+<code>
+    def menu_loc(request):
+        """
+        View function for rendering the 'menu_loc.html' template, displaying menu items for a specific location.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'menu_loc.html' template.
+        """
+</code>
+</pre>
+
+<h2>7. place_order</h2>
+
+<p>
+    View function for placing an order.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def place_order(request):
+        """
+        View function for placing an order.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the status of the order placement.
+        """
+</code>
+</pre>
+
+<h2>8. delete_order</h2>
+
+<p>
+    View function for deleting an order and its associated order items.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def delete_order(request):
+        """
+        View function for deleting an order and its associated order items.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the status of the order deletion.
+        """
+</code>
+</pre>
+
+<!-- Continue documenting other functions similarly -->
+
+<h2>9. account_details</h2>
+
+<p>
+    View function for rendering the 'account_details.html' template, displaying user account details.
+</p>
+
+<pre>
+<code>
+    def account_details(request):
+        """
+        View function for rendering the 'account_details.html' template, displaying user account details.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'account_details.html' template.
+        """
+</code>
+</pre>
+
+<h2>10. update_info</h2>
+
+<p>
+    View function for updating user information.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def update_info(request):
+        """
+        View function for updating user information.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the status of the information update.
+        """
+</code>
+</pre>
+
+<h2>11. update_favorite</h2>
+
+<p>
+    View function for updating the favorite status of an order.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def update_favorite(request):
+        """
+        View function for updating the favorite status of an order.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the status of the favorite status update.
+        """
+</code>
+</pre>
+
+<h2>12. manager_home</h2>
+
+<p>
+    View function for rendering the 'manager_home.html' template, displaying manager-specific content.
+</p>
+
+<pre>
+<code>
+    def manager_home(request):
+        """
+        View function for rendering the 'manager_home.html' template, displaying manager-specific content.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'manager_home.html' template.
+        """
+</code>
+</pre>
+
+<h2>13. sales_analysis</h2>
+
+<p>
+    View function for rendering the 'sales_report.html' template, displaying sales analysis for managers.
+</p>
+
+<pre>
+<code>
+    def sales_analysis(request):
+        """
+        View function for rendering the 'sales_report.html' template, displaying sales analysis for managers.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'sales_report.html' template.
+        """
+</code>
+</pre>
+
+<h2>14. new_excess_time</h2>
+
+<p>
+    View function for retrieving excess time alerts within a specified date range.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def new_excess_time(request):
+        """
+        View function for retrieving excess time alerts within a specified date range.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response containing the excess time alerts.
+        """
+</code>
+</pre>
+
+<h2>15. alerts</h2>
+
+<p>
+    View function for rendering the 'alerts.html' template, displaying various alerts and reports for managers.
+</p>
+
+<pre>
+<code>
+    def alerts(request):
+        """
+        View function for rendering the 'alerts.html' template, displaying various alerts and reports for managers.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'alerts.html' template.
+        """
+</code>
+</pre>
+
+<!-- Continue documenting other functions similarly -->
+
+<h2>16. get_sales_graph</h2>
+
+<p>
+    View function for retrieving sales graph data and returning it as HTML.
+</p>
+
+<pre>
+<code>
+    def get_sales_graph(request):
+        """
+        View function for retrieving sales graph data and returning it as HTML.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response containing the sales graph HTML.
+        """
+</code>
+</pre>
+
+<h2>17. get_stock_graph</h2>
+
+<p>
+    View function for retrieving stock graph data and returning it as HTML.
+</p>
+
+<pre>
+<code>
+    def get_stock_graph(request):
+        """
+        View function for retrieving stock graph data and returning it as HTML.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response containing the stock graph HTML.
+        """
+</code>
+</pre>
+
+<h2>18. ingredients</h2>
+
+<p>
+    View function for rendering the 'ingredients.html' template, displaying ingredient information for managers.
+</p>
+
+<pre>
+<code>
+    def ingredients(request):
+        """
+        View function for rendering the 'ingredients.html' template, displaying ingredient information for managers.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'ingredients.html' template.
+        """
+</code>
+</pre>
+
+<h2>19. update_items</h2>
+
+<p>
+    View function for rendering the 'update_items.html' template, displaying item update information for managers.
+</p>
+
+<pre>
+<code>
+    def update_items(request):
+        """
+        View function for rendering the 'update_items.html' template, displaying item update information for managers.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'update_items.html' template.
+        """
+</code>
+</pre>
+
+<h2>20. about</h2>
+
+<p>
+    View function for rendering the 'update_items.html' template, displaying item update information for managers.
+</p>
+
+<pre>
+<code>
+    def about(request):
+        """
+        View function for rendering the 'update_items.html' template, displaying item update information for managers.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'update_items.html' template.
+        """
+</code>
+</pre>
+
+<h2>21. order_online</h2>
+
+<p>
+    View function for rendering the 'order_online.html' template, allowing users to place online orders.
+</p>
+
+<pre>
+<code>
+    def order_online(request):
+        """
+        View function for rendering the 'order_online.html' template, allowing users to place online orders.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'order_online.html' template.
+        """
+</code>
+</pre>
+
+<h2>22. ajax_delete</h2>
+
+<p>
+    View function for handling an AJAX request to update the category of an item.
+</p>
+
+<pre>
+<code>
+    def ajax_delete(request):
+        """
+        View function for handling an AJAX request to update the category of an item.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the success or failure of the update.
+        """
+</code>
+</pre>
+
+<h2>23. checkout_order</h2>
+
+<p>
+    View function for rendering the 'checkout_order.html' template, allowing users to checkout and place an order.
+</p>
+
+<pre>
+<code>
+    def checkout_order(request):
+        """
+        View function for rendering the 'checkout_order.html' template, allowing users to checkout and place an order.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'checkout_order.html' template.
+        """
+</code>
+</pre>
+
+<!-- Documentation for new functions -->
+
+<h2>24. order_history</h2>
+
+<p>
+    View function for rendering the 'order_history.html' template, displaying the order history.
+</p>
+
+<pre>
+<code>
+    def order_history(request):
+        """
+        View function for rendering the 'order_history.html' template, displaying the order history.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'order_history.html' template.
+        """
+</code>
+</pre>
+
+<h2>25. new_order_history</h2>
+
+<p>
+    View function for handling new order history requests via POST method.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def new_order_history(request):
+        """
+        View function for handling new order history requests via POST method.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response containing the order history data.
+        """
+</code>
+</pre>
+
+<h2>26. edit_order_view</h2>
+
+<p>
+    View function for rendering the order editing page.
+</p>
+
+<pre>
+<code>
+    def edit_order_view(request, order_id):
+        """
+        View function for rendering the order editing page.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+        - order_id (int): The ID of the order to be edited.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'edit_order.html' template.
+        """
+</code>
+</pre>
+
+<h2>27. create_item</h2>
+
+<p>
+    View function for rendering the page to create a new item.
+</p>
+
+<pre>
+<code>
+    def create_item(request):
+        """
+        View function for rendering the page to create a new item.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'create_item.html' template.
+        """
+</code>
+</pre>
+
+<h2>28. edit_item</h2>
+
+<p>
+    View function for rendering the page to edit an existing item.
+</p>
+
+<pre>
+<code>
+    def edit_item(request, item_id):
+        """
+        View function for rendering the page to edit an existing item.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+        - item_id (int): The ID of the item to be edited.
+
+        Returns:
+        - HttpResponse: Rendered response containing the 'edit_item.html' template.
+        """
+</code>
+</pre>
+
+<h2>29. save_order</h2>
+
+<p>
+    View function for handling the creation or update of orders.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def save_order(request):
+        """
+        View function for handling the creation or update of orders.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the success or failure of the operation.
+        """
+</code>
+</pre>
+
+<h2>30. create_item_submit</h2>
+
+<p>
+    View function for handling the creation or update of items.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def create_item_submit(request):
+        """
+        View function for handling the creation or update of items.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the success or failure of the operation.
+        """
+</code>
+</pre>
+
+<!-- Documentation for new functions -->
+
+<h2>31. update_stock</h2>
+
+<p>
+    View function for updating the stock of an ingredient.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def update_stock(request):
+        """
+        View function for updating the stock of an ingredient.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the success or failure of the operation.
+        """
+</code>
+</pre>
+
+<h2>32. delete_ingredient</h2>
+
+<p>
+    View function for deleting an ingredient.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def delete_ingredient(request):
+        """
+        View function for deleting an ingredient.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the success or failure of the delete operation.
+        """
+</code>
+</pre>
+
+<h2>33. add_new_ingredient</h2>
+
+<p>
+    View function for adding a new ingredient.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def add_new_ingredient(request):
+        """
+        View function for adding a new ingredient.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the success or failure of the addition.
+        """
+</code>
+</pre>
+
+<h2>34. kitchen</h2>
+
+<p>
+    View function for rendering the kitchen dashboard, displaying mobile orders.
+</p>
+
+<pre>
+<code>
+    def kitchen(request):
+        """
+        View function for rendering the kitchen dashboard, displaying mobile orders.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - HttpResponse: Rendered HTML response displaying kitchen orders.
+        """
+</code>
+</pre>
+
+<h2>35. kitchen_deliver</h2>
+
+<p>
+    View function for updating the delivery status of a kitchen order.
+</p>
+
+<pre>
+<code>
+    @csrf_exempt
+    def kitchen_deliver(request):
+        """
+        View function for updating the delivery status of a kitchen order.
+
+        Parameters:
+        - request (HttpRequest): The HTTP request object.
+
+        Returns:
+        - JsonResponse: JSON response indicating the success or error status of the operation.
+        """
+</code>
+</pre>
+

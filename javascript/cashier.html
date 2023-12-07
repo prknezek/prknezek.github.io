@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cashier Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Cashier JavaScript Code Documentation</h1>
+
+    <!-- Section: Create Order Item -->
+    <section>
+        <h2>Create Order Item</h2>
+        <p>
+            Creates a new order item based on the provided item and adds it to the order list.
+        </p>
+        <p>
+            <strong>Parameter:</strong>
+            <code>item</code> (type: <code>HTMLElement</code>) - The item to be added to the order list.
+        </p>
+        <pre><code>
+function createOrderItem(item) {
+    // Function code for createOrderItem
+    // ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Section: Change Category -->
+    <section>
+        <h2>Change Category</h2>
+        <p>
+            Changes the category of displayed items in the item list based on the provided category.
+        </p>
+        <p>
+            <strong>Parameter:</strong>
+            <code>category</code> (type: <code>string</code>) - The category to filter the item list by.
+        </p>
+        <pre><code>
+function changeCategory(category) {
+    // Function code for changeCategory
+    // ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Section: Get Options -->
+    <section>
+        <h2>Get Options</h2>
+        <p>
+            Retrieves and displays options for a given item.
+        </p>
+        <p>
+            <strong>Parameter:</strong>
+            <code>item</code> (type: <code>HTMLElement</code>) - The item for which options are to be displayed.
+        </p>
+        <pre><code>
+function getOptions(item) {
+    // Function code for getOptions
+    // ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Section: Show Options -->
+    <section>
+        <h2>Show Options</h2>
+        <p>
+            Shows the options for a given item.
+        </p>
+        <p>
+            <strong>Parameters:</strong>
+            <code>item</code> (type: <code>HTMLElement</code>) - The item for which options are to be shown.
+            <code>options_clone</code> (type: <code>HTMLElement</code>) - The cloned options element to be displayed.
+        </p>
+        <pre><code>
+function showOptions(item, options_clone) {
+    // Function code for showOptions
+    // ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Add more sections for other functions as needed -->
+
+</body>
+</html>

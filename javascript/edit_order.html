@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Order Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Edit Order Code Documentation</h1>
+
+    <!-- Global Variables -->
+    <section>
+        <h2>Global Variables</h2>
+        <pre><code>
+var id = 1;                  // Represents the ID of order items
+var options_id = 0;           // Used for something related to options
+var item_map = new Map();     // Map to store order items
+var total = 0;                // Represents the total price of the order
+var order_id = -1;            // Represents the ID of the order
+        </code></pre>
+    </section>
+
+    <!-- Event Listener: DOMContentLoaded -->
+    <section>
+        <h2>Event Listener: DOMContentLoaded</h2>
+        <pre><code>
+document.addEventListener("DOMContentLoaded", function() {
+    // ... Event listener code ...
+});
+        </code></pre>
+    </section>
+
+    <!-- Function: createOrderItem -->
+    <section>
+        <h2>Function: createOrderItem</h2>
+        <p>
+            Creates an order item based on a template and manages related functionalities.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>item</code> (<code>HTMLElement</code>): The item to be added to the order.</li>
+            </ul>
+        </p>
+        <pre><code>
+function createOrderItem(item) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: changeCategory -->
+    <section>
+        <h2>Function: changeCategory</h2>
+        <p>
+            Filters and shows/hides items based on the selected category.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>category</code> (<code>string</code>): The category to be displayed.</li>
+            </ul>
+        </p>
+        <pre><code>
+function changeCategory(category) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: addQuantity -->
+    <section>
+        <h2>Function: addQuantity</h2>
+        <p>
+            Increments the quantity of an item and updates the order list.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>item</code> (<code>HTMLElement</code>): The order item to be updated.</li>
+                <li><code>item_price</code> (<code>number</code>): The price of the item.</li>
+                <li><code>new_quantity</code> (<code>number</code>): The quantity to be added.</li>
+                <li><code>editing</code> (<code>boolean</code>): Indicates if the quantity is being edited.</li>
+            </ul>
+        </p>
+        <pre><code>
+function addQuantity(item, item_price, new_quantity, editing=false) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: subtractQuantity -->
+    <section>
+        <h2>Function: subtractQuantity</h2>
+        <p>
+            Subtracts quantity from an order item.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>item</code> (<code>HTMLElement</code>): The order item element.</li>
+                <li><code>item_price</code> (<code>string</code>): The price of the item.</li>
+                <li><code>new_quantity</code> (<code>number</code>): The quantity to subtract.</li>
+                <li><code>editing</code> (<code>boolean</code>): Whether the quantity is being edited.</li>
+            </ul>
+        </p>
+        <pre><code>
+function subtractQuantity(item, item_price, new_quantity, editing=false) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: editQuantity -->
+    <section>
+        <h2>Function: editQuantity</h2>
+        <p>
+            Edits the quantity of an order item.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>item</code> (<code>HTMLElement</code>): The order item element.</li>
+                <li><code>item_price</code> (<code>string</code>): The price of the item.</li>
+            </ul>
+        </p>
+        <pre><code>
+function editQuantity(item, item_price) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: deleteItem -->
+    <section>
+        <h2>Function: deleteItem</h2>
+        <p>
+            Deletes an order item.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>item</code> (<code>HTMLElement</code>): The order item element.</li>
+                <li><code>item_price</code> (<code>string</code>): The price of the item.</li>
+            </ul>
+        </p>
+        <pre><code>
+function deleteItem(item, item_price) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: save_order -->
+    <section>
+        <h2>Function: save_order</h2>
+        <p>
+            Saves the order.
+        </p>
+        <pre><code>
+function save_order() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: clear_order -->
+    <section>
+        <h2>Function: clear_order</h2>
+        <p>
+            Clears the order.
+        </p>
+        <pre><code>
+function clear_order() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: print -->
+    <section>
+        <h2>Function: print</h2>
+        <p>
+            Prints the item map to the console.
+        </p>
+        <pre><code>
+function print() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Constructor: map_item -->
+    <section>
+        <h2>Constructor: map_item</h2>
+        <p>
+            Constructor function for a map item.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>id</code> (<code>number</code>): The unique identifier of the item.</li>
+                <li><code>name</code> (<code>string</code>): The name of the item.</li>
+                <li><code>price</code> (<code>number</code>): The price of the item.</li>
+                <li><code>quantity</code> (<code>number</code>): The quantity of the item.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * @param {number} id - The unique identifier of the item.
+ * @param {string} name - The name of the item.
+ * @param {number} price - The price of the item.
+ * @param {number} quantity - The quantity of the item.
+ */
+map_item = function (id, name, price, quantity){
+    // ... Constructor code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: getCookie -->
+    <section>
+        <h2>Function: getCookie</h2>
+        <p>
+            Function to get the value of a cookie by name.
+        </p>
+        <p>
+            Parameters:
+            <ul>
+                <li><code>name</code> (<code>string</code>): The name of the cookie.</li>
+            </ul>
+        </p>
+        <pre><code>
+/**
+ * @param {string} name - The name of the cookie.
+ * @returns {string} The value of the cookie.
+ */
+function getCookie(name) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+</body>
+</html>

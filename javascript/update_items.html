@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Items JavaScript Code Documentation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            max-width: 800px;
+            margin: 20px auto;
+            line-height: 1.6;
+        }
+
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Documentation</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Python
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="../python/Django-urls.html">django-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-functions.html">pos-functions</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-urls.html">pos-urls</a></li>
+                  <li><a class="dropdown-item" href="../python/pos-views.html">pos-views</a></li>
+                  <li><a class="dropdown-item" href="../python/users-views.html">users-views</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    JavaScript
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="./account_details.html">account_details</a></li>
+                    <li><a class="dropdown-item" href="./alerts.html">alerts</a></li>
+                    <li><a class="dropdown-item" href="./cashier.html">cashier</a></li>
+                    <li><a class="dropdown-item" href="./create_item.html">create_item</a></li>
+                    <li><a class="dropdown-item" href="./edit_order.html">edit_order</a></li>
+                    <li><a class="dropdown-item" href="./html-magnifier.html">html-magnifier</a></li>
+                    <li><a class="dropdown-item" href="./ingredients.html">ingredients</a></li>
+                    <li><a class="dropdown-item" href="./kitchen.html">kitchen</a></li>
+                    <li><a class="dropdown-item" href="./landing.html">landing</a></li>
+                    <li><a class="dropdown-item" href="./local_storage.html">local_storage</a></li>
+                    <li><a class="dropdown-item" href="./menu_loc.html">menu_loc</a></li>
+                    <li><a class="dropdown-item" href="./order_history.html">order_history</a></li>
+                    <li><a class="dropdown-item" href="./order_online.html">order_online</a></li>
+                    <li><a class="dropdown-item" href="./sales_report.html">sales_report</a></li>
+                    <li><a class="dropdown-item" href="./update_items.html">update_items</a></li>
+                  </ul>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <h1>Update Items JavaScript Code Documentation</h1>
+
+    <!-- Function: window.onload -->
+    <section id="window-onload">
+        <h2>Function: window.onload</h2>
+        <p>
+            Sets up the initial state of the page when it loads. Calls the 'changeCategory' function to set the category to 'piadas' on page load.
+        </p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>None</code></li>
+        </ul>
+        <pre><code>
+window.onload = function() {
+    // run change category to be set to piadas when page loads
+    changeCategory('piadas');
+};
+        </code></pre>
+    </section>
+
+    <!-- Variable: selected_item_id -->
+    <section id="selected-item-id">
+        <h2>Variable: selected_item_id</h2>
+        <p>
+            Keeps track of the identifier of the selected item.
+        </p>
+        <pre><code>
+var selected_item_id = -1
+        </code></pre>
+    </section>
+
+    <!-- Variable: selected_mode -->
+    <section id="selected-mode">
+        <h2>Variable: selected_mode</h2>
+        <p>
+            Keeps track of the selected mode (0 for delete, 1 for edit).
+        </p>
+        <pre><code>
+var selected_mode = -1
+        </code></pre>
+    </section>
+
+    <!-- Function: changeCategory -->
+    <section id="change-category">
+        <h2>Function: changeCategory</h2>
+        <p>
+            Changes the displayed items based on the selected category. Hides all items that do not belong to the selected category and shows those that do.
+        </p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>category</code> (string): The category to be displayed.</li>
+        </ul>
+        <pre><code>
+function changeCategory(category) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: deleteItem -->
+    <section id="delete-item">
+        <h2>Function: deleteItem</h2>
+        <p>
+            Deletes the selected item after confirming with the user. Makes an AJAX request to delete the item and reloads the page on success. Logs an error message on failure.
+        </p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>itemID</code> (string): The identifier of the item to be deleted.</li>
+        </ul>
+        <pre><code>
+function deleteItem(itemID) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: select_item -->
+    <section id="select-item">
+        <h2>Function: select_item</h2>
+        <p>
+            Selects an item by highlighting it and updating the selected_item_id. Resets the style of the previously selected item.
+        </p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>itemID</code> (string): The identifier of the selected item.</li>
+        </ul>
+        <pre><code>
+function select_item(itemID) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: select_delete -->
+    <section id="select-delete">
+        <h2>Function: select_delete</h2>
+        <p>
+            Sets the selected_mode to 'delete' and deletes the selected item.
+        </p>
+        <pre><code>
+function select_delete() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: select_edit -->
+    <section id="select-edit">
+        <h2>Function: select_edit</h2>
+        <p>
+            Sets the selected_mode to 'edit' and redirects to the edit page for the selected item.
+        </p>
+        <pre><code>
+function select_edit() {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+    <!-- Function: editItem -->
+    <section id="edit-item">
+        <h2>Function: editItem</h2>
+        <p>
+            Redirects to the edit page for the selected item.
+        </p>
+        <p><strong>Parameters:</strong></p>
+        <ul>
+            <li><code>itemID</code> (string): The identifier of the item to be edited.</li>
+        </ul>
+        <pre><code>
+function editItem(itemID) {
+    // ... Function code ...
+}
+        </code></pre>
+    </section>
+
+</body>
+</html>

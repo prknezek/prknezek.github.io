@@ -1,0 +1,456 @@
+<!-- Documentation for URL patterns in Django project -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Documentation</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Python
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="./Django-urls.html">django-urls</a></li>
+              <li><a class="dropdown-item" href="./pos-functions.html">pos-functions</a></li>
+              <li><a class="dropdown-item" href="./pos-urls.html">pos-urls</a></li>
+              <li><a class="dropdown-item" href="./pos-views.html">pos-views</a></li>
+              <li><a class="dropdown-item" href="./users-views.html">users-views</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                JavaScript
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="../javascript/account_details.html">account_details</a></li>
+                <li><a class="dropdown-item" href="../javascript/alerts.html">alerts</a></li>
+                <li><a class="dropdown-item" href="../javascript/cashier.html">cashier</a></li>
+                <li><a class="dropdown-item" href="../javascript/create_item.html">create_item</a></li>
+                <li><a class="dropdown-item" href="../javascript/edit_order.html">edit_order</a></li>
+                <li><a class="dropdown-item" href="../javascript/html-magnifier.html">html-magnifier</a></li>
+                <li><a class="dropdown-item" href="../javascript/ingredients.html">ingredients</a></li>
+                <li><a class="dropdown-item" href="../javascript/kitchen.html">kitchen</a></li>
+                <li><a class="dropdown-item" href="../javascript/landing.html">landing</a></li>
+                <li><a class="dropdown-item" href="../javascript/local_storage.html">local_storage</a></li>
+                <li><a class="dropdown-item" href="../javascript/menu_loc.html">menu_loc</a></li>
+                <li><a class="dropdown-item" href="../javascript/order_history.html">order_history</a></li>
+                <li><a class="dropdown-item" href="../javascript/order_online.html">order_online</a></li>
+                <li><a class="dropdown-item" href="../javascript/sales_report.html">sales_report</a></li>
+                <li><a class="dropdown-item" href="../javascript/update_items.html">update_items</a></li>
+              </ul>
+            </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<h2>1. Home Page</h2>
+
+<p>
+    Home page redirects to the about view.
+</p>
+
+<pre>
+<code>
+    path('', views.about, name="About"),
+</code>
+</pre>
+
+<h2>2. Cashier View</h2>
+
+<p>
+    URL for the Cashier view.
+</p>
+
+<pre>
+<code>
+    path('cashier/', views.cashier, name="cashier"),
+</code>
+</pre>
+
+<h2>3. Staff Home View</h2>
+
+<p>
+    URL for the Staff Home view.
+</p>
+
+<pre>
+<code>
+    path('staff/', views.staff_home, name="Staff Home"),
+</code>
+</pre>
+
+<h2>4. Customer Home View</h2>
+
+<p>
+    URL for the Customer Home view.
+</p>
+
+<pre>
+<code>
+    path('customer/', views.customer_landing, name="Customer Home"),
+</code>
+</pre>
+
+<h2>5. Place Order View</h2>
+
+<p>
+    URL for the Place Order view.
+</p>
+
+<pre>
+<code>
+    path('place_order/', views.place_order, name="Place Order"),
+</code>
+</pre>
+
+<h2>6. Save Order View</h2>
+
+<p>
+    URL for the Save Order view.
+</p>
+
+<pre>
+<code>
+    path('save_order/', views.save_order, name="Save Order"),
+</code>
+</pre>
+
+<h2>7. Manager Home View</h2>
+
+<p>
+    URL for the Manager Home view.
+</p>
+
+<pre>
+<code>
+    path('manager/', views.manager_home, name='Manager Home'),
+</code>
+</pre>
+
+<h2>8. Menu Location View</h2>
+
+<p>
+    URL for the Menu Location view.
+</p>
+
+<pre>
+<code>
+    path('menu_location/', views.menu_loc, name="Menu Location"),
+</code>
+</pre>
+
+<h2>9. Account Details View</h2>
+
+<p>
+    URL for the Account Details view.
+</p>
+
+<pre>
+<code>
+    path('account_details/', views.account_details, name="Account Details"),
+</code>
+</pre>
+
+<h2>10. Update Info View</h2>
+
+<p>
+    URL for the Update Info view.
+</p>
+
+<pre>
+<code>
+    path('update_info/', views.update_info, name="Update Info"),
+</code>
+</pre>
+
+<h2>11. Sales Analysis View</h2>
+
+<p>
+    URL for the Sales Analysis view.
+</p>
+
+<pre>
+<code>
+    path('sales_analysis/', views.sales_analysis, name="Sales Analysis"),
+</code>
+</pre>
+
+<h2>12. Get Sales Graph View</h2>
+
+<p>
+    URL for the Get Sales Graph view.
+</p>
+
+<pre>
+<code>
+    path('get_sales_graph/', views.get_sales_graph, name='get_sales_graph'),
+</code>
+</pre>
+
+<h2>13. Get Stock Graph View</h2>
+
+<p>
+    URL for the Get Stock Graph view.
+</p>
+
+<pre>
+<code>
+    path('get_stock_graph/', views.get_stock_graph, name='get_stock_graph'),
+</code>
+</pre>
+
+<h2>14. Alerts View</h2>
+
+<p>
+    URL for the Alerts view.
+</p>
+
+<pre>
+<code>
+    path('alerts/', views.alerts, name='alerts'),
+</code>
+</pre>
+
+<h2>15. Ingredients View</h2>
+
+<p>
+    URL for the Ingredients view.
+</p>
+
+<pre>
+<code>
+    path('ingredients/', views.ingredients, name='ingredients'),
+</code>
+</pre>
+
+<h2>16. Update Items View</h2>
+
+<p>
+    URL for the Update Items view.
+</p>
+
+<pre>
+<code>
+    path('update_items/', views.update_items, name='update items'),
+</code>
+</pre>
+
+<h2>17. New Excess Time View</h2>
+
+<p>
+    URL for the New Excess Time view.
+</p>
+
+<pre>
+<code>
+    path('new_excess_time/', views.new_excess_time, name='New Excess Time'),
+</code>
+</pre>
+
+<h2>18. Order Online View</h2>
+
+<p>
+    URL for the Order Online view.
+</p>
+
+<pre>
+<code>
+    path('order_online/', views.order_online, name='Order Online'),
+</code>
+</pre>
+
+<h2>19. Ajax Delete View</h2>
+
+<p>
+    URL for the Ajax Delete view.
+</p>
+
+<pre>
+<code>
+    path('ajax_delete/', views.ajax_delete, name='Ajax Delete'),
+</code>
+</pre>
+
+<h2>20. Update Stock View</h2>
+
+<p>
+    URL for the Update Stock view.
+</p>
+
+<pre>
+<code>
+    path('update_stock/', views.update_stock, name="Update Stock"),
+</code>
+</pre>
+
+<h2>21. Add New Ingredient View</h2>
+
+<p>
+    URL for the Add New Ingredient view.
+</p>
+
+<pre>
+<code>
+    path('add_new_ingredient/', views.add_new_ingredient, name="Add Ingredient"),
+</code>
+</pre>
+
+<h2>22. Delete Ingredient View</h2>
+
+<p>
+    URL for the Delete Ingredient view.
+</p>
+
+<pre>
+<code>
+    path('delete_ingredient/', views.delete_ingredient, name="Delete Ingredient"),
+</code>
+</pre>
+
+<h2>23. Checkout Order View</h2>
+
+<p>
+    URL for the Checkout Order view.
+</p>
+
+<pre>
+<code>
+    path('checkout_order/', views.checkout_order, name='Check Out Order'),
+</code>
+</pre>
+
+<h2>24. Order History View</h2>
+
+<p>
+    URL for the Order History view.
+</p>
+
+<pre>
+<code>
+    path('order_history/', views.order_history, name='Order History'),
+</code>
+</pre>
+
+<h2>25. New Order History View</h2>
+
+<p>
+    URL for the New Order History view.
+</p>
+
+<pre>
+<code>
+    path('new_order_history/', views.new_order_history, name='new_order_history'),
+</code>
+</pre>
+
+<h2>26. Edit Order View</h2>
+
+<p>
+    URL for the Edit Order view.
+</p>
+
+<pre>
+<code>
+    path('edit_order/<int:order_id>/', views.edit_order_view, name='edit_order'),
+</code>
+</pre>
+
+<h2>27. Edit Item View</h2>
+
+<p>
+    URL for the Edit Item view.
+</p>
+
+<pre>
+<code>
+    path('edit_item/<int:item_id>/', views.edit_item, name='edit_item'),
+</code>
+</pre>
+
+<h2>28. Create Item View</h2>
+
+<p>
+    URL for the Create Item view.
+</p>
+
+<pre>
+<code>
+    path('create_item/', views.create_item, name='create_item'),
+</code>
+</pre>
+
+<h2>29. Create Item Submit View</h2>
+
+<p>
+    URL for the Create Item Submit view.
+</p>
+
+<pre>
+<code>
+    path('create_item_submit/', views.create_item_submit, name='create_item_submit'),
+</code>
+</pre>
+
+<h2>30. Update Favorite View</h2>
+
+<p>
+    URL for the Update Favorite view.
+</p>
+
+<pre>
+<code>
+    path('update_favorite/', views.update_favorite, name="Update Favorite"),
+</code>
+</pre>
+
+<h2>31. Delete Order View</h2>
+
+<p>
+    URL for the Delete Order view.
+</p>
+
+<pre>
+<code>
+    path('delete_order/', views.delete_order, name="delete_order"),
+</code>
+</pre>
+
+<h2>32. Kitchen View</h2>
+
+<p>
+    URL for the Kitchen view.
+</p>
+
+<pre>
+<code>
+    path('kitchen/', views.kitchen, name="Kitchen"),
+</code>
+</pre>
+
+<h2>33. Kitchen Deliver View</h2>
+
+<p>
+    URL for the Kitchen Deliver view.
+</p>
+
+<pre>
+<code>
+    path('kitchen_deliver/', views.kitchen_deliver, name="kitchen_deliver"),
+</code>
+</pre>
+
+<h2>34. Static Files</h2>
+
+<p>
+    Handling static files in Django.
+</p>
+
+<pre>
+<code>
+    ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+</code>
+</pre>
